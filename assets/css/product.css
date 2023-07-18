@@ -1,0 +1,308 @@
+:root {
+  --mainPrimaryColor: #ffffff;
+  --mainSecondaryColor: #1C2461;
+  --mainTertiaryColor: #000000;
+  --mainTextColor: #444444;
+  --mainFontFamily: "Poppins", sans-serif;
+}
+
+button.close {
+  font-size: 22px;
+  background: none !important;
+}
+
+.button-close:hover {
+  color: var(--mainSecondaryColor) !important;
+}
+
+.products-section {
+  position: relative;
+  padding: 200px 0px 80px;
+}
+
+.inner-container .carousel_container {
+  /* margin-bottom: 5%; */
+  margin-bottom: 50px;
+}
+
+.inner-box {
+  /* padding: 20%; */
+  padding: 5%;
+}
+
+.inner-container.product-home .carousel_container {
+  margin-bottom: 0px;
+}
+
+.inner-container .carousel_container h3,
+.inner-container .carousel_container p {
+  margin-left: 3.5%;
+}
+
+.inner-container .carousel_container h3 {
+  text-align: left !important;
+  padding-left: 20px;
+}
+
+.inner-container .carousel_container p {
+  text-align: left !important;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.inner-container .carousel_container button {
+  font-size: 15px;
+  text-transform: capitalize;
+  background: var(--mainSecondaryColor);
+  box-shadow: none;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  margin-left: 6%;
+}
+
+.inner-container .carousel_container button:hover {
+  color: var(--mainSecondaryColor);
+  background: #fff;
+  /* border: 0.3px solid var(--mainSecondaryColor); */
+  box-shadow: 1px 4px 25px rgba(0, 0, 0, 0.12);
+}
+
+.inner-container .carousel_container .service-block .invest,
+.inner-container .carousel_container .service-block .calculator {
+  position: relative;
+  font-size: 13px;
+  width: 45%;
+  padding: 10%;
+  margin: 10px auto;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 500ms ease;
+  box-shadow: 0 2.8px 2.2px rgba(78, 78, 78, 0.034),
+    0 6.7px 5.3px rgba(65, 64, 64, 0.048), 0 12.5px 10px rgba(63, 63, 63, 0.06),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.inner-container .carousel_container .service-block .invest {
+  background: #fff;
+  color: var(--mainSecondaryColor);
+}
+
+.inner-container .carousel_container .service-block .invest:hover {
+  color: #fff;
+  background: var(--mainSecondaryColor);
+}
+
+.inner-container .carousel_container .service-block .calculator {
+  color: #fff;
+  background: var(--mainSecondaryColor);
+}
+
+.inner-container .carousel_container .service-block .calculator:hover {
+  color: var(--mainSecondaryColor);
+  background: #fff;
+}
+
+.service-block .inner-box .text .title {
+  font-size: 22px;
+  color: var(--mainSecondaryColor);
+}
+
+.product-block .inner-box .icon-box {
+  border: 5px solid var(--mainSecondaryColor);
+  border-radius: 50%;
+}
+
+.top-footer-img {
+  height: 100%;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.45);
+  border-radius: 120px 10px 104px 0px;
+}
+
+.action-section {
+  padding: 5%;
+}
+
+.image_app button {
+  background: var(--mainSecondaryColor);
+  color: #fff;
+  border-radius: 10px;
+  height: 60px;
+  width: 250px;
+  font-weight: 700;
+  align-self: center;
+}
+
+/* .owl-item {
+  box-shadow: rgba(68, 88, 144, 0.1) 0px 10px 29px 0px;
+} */
+.portfolios .service-block .inner-box {
+  background: #fff;
+  position: relative;
+  padding: 45px 15px 45px 15px;
+  /* border: 2px solid #ffe8e8; */
+  box-shadow: rgb(68 88 144 / 10%) 0px 10px 29px 0px;
+  height: 100%;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  z-index: 1;
+  border-radius: 8px;
+  /* margin-top: 50px;
+  margin-bottom: 80px; */
+}
+
+.owl-carousel .owl-stage {
+  padding-bottom: 60px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+#productCalculatorModal .modal-dialog {
+  margin: auto;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+input:active,
+input:focus {
+  box-shadow: none !important;
+  border-color: #bbb !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .inner-container .carousel_container .service-block .invest,
+  .inner-container .carousel_container .service-block .calculator {
+    font-size: 11px;
+    width: 45%;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products-section {
+    position: relative;
+    padding: 40px 0px 40px;
+  }
+
+  .top-footer-img {
+    height: 100%;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.45);
+    border-radius: 80px 7px 74px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal-title,
+  .form-control {
+    font-size: 15px !important;
+  }
+
+  .btn {
+    box-shadow: none !important;
+    padding: 10px 25px 10px 25px !important;
+  }
+
+  button.close {
+    font-size: 18px;
+  }
+
+  .products-section {
+    position: relative;
+    padding: 50px 0px 20px;
+  }
+
+  .top_footer_items h3 {
+    font-size: 20px;
+    /* text-align: left; */
+  }
+
+  .top_footer_items p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .image_app button {
+    border-radius: 7px;
+    height: 60px;
+    width: 250px;
+    font-weight: 700;
+    margin: auto;
+  }
+
+  /* .testimonials_section {
+        padding-top: 0 !important;
+    } */
+  /* .testimonials_section {
+        padding-bottom: 30px !important;
+    } */
+  /* .main-footer .widgets-section {
+        padding-top: 60px !important;
+    } */
+  /* .top_footer { */
+  /* margin: 1% auto; */
+  /* } */
+}
+
+@media screen and (max-width: 320px) {
+  .products-section {
+    position: relative;
+    padding: 30px 0px 20px;
+  }
+
+  .sec-title h2 {
+    font-size: 25px;
+  }
+
+  .testimonials_section {
+    /* padding-bottom: 20px !important; */
+  }
+
+  .inner-container .carousel_container .service-block .invest,
+  .inner-container .carousel_container .service-block .calculator {
+    font-size: 10px;
+    width: 45%;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+
+  /* .main-footer {
+        padding: 40px 0 80px;
+    } */
+
+  .image_app button {
+    border-radius: 5px;
+    height: 45px;
+    width: 200px;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}

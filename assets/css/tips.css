@@ -1,0 +1,31 @@
+/*** 
+
+====================================================================
+    Services Section
+====================================================================
+
+***/
+.how_it_works .service-block:nth-child(3) .step_number,
+.how_it_works .service-block:nth-child(3) .inner-box {
+  border: 2px solid rgba(68, 88, 144, 0.1) !important;
+}
+.how_it_works .service-block:nth-child(3) .step_number:hover,
+.how_it_works .service-block:nth-child(3) .inner-box:hover {
+  border: 2px solid var(--mainSecondaryColor) !important;
+}
+
+.how_it_works .service-block:nth-child(4) .step_number,
+.how_it_works .service-block:nth-child(4) .inner-box,
+.how_it_works .service-block:nth-child(5) .step_number,
+.how_it_works .service-block:nth-child(5) .inner-box {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .how_it_works .service-block:nth-child(4) .step_number,
+  .how_it_works .service-block:nth-child(4) .inner-box,
+  .how_it_works .service-block:nth-child(5) .step_number,
+  .how_it_works .service-block:nth-child(5) .inner-box {
+    margin-top: 0;
+  }
+}

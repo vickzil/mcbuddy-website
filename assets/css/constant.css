@@ -211,7 +211,6 @@
     /* grid-gap: 19px; */
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
 
 @media screen and (max-width: 952px) {
@@ -317,7 +316,6 @@
   text-transform: uppercase;
 }
 
- 
 .details {
   margin-top: 0px;
   display: grid;
@@ -326,9 +324,9 @@
 }
 .detailed {
   margin-top: 0px;
- display: flex;
- justify-content: space-between;
- gap: 15rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
 }
 
 .details .news-details {
@@ -452,10 +450,9 @@
   /* color: black !important; */
 }
 
-
 @media screen and (max-width: 1170px) {
   .detailed {
-     width: 100%;
+    width: 100%;
     gap: 1rem;
   }
 }
@@ -522,7 +519,6 @@
   .main-footer .widgets-section {
     padding-top: 20px !important;
   }
-  
 }
 
 .reputation-section-two {
@@ -551,8 +547,42 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .testimonial-block .inner-box {
     padding: 40px 40px;
+  }
+} */
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-image {
+  max-width: 140px;
+  height: auto;
+  margin: 10px 15px;
+}
+
+.sponsor-image img {
+  max-height: 60px;
+  transition: 0.4s ease;
+}
+
+.sponsor-image img:hover {
+  transform: scale(1.075);
+}
+
+@media screen and (max-width: 769px) {
+  .sponsor-image {
+    margin: 10px 12px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .sponsor-image {
+    margin: 20px 10px;
   }
 }

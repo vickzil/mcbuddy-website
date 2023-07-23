@@ -960,7 +960,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 320px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2252,9 +2252,9 @@ footer {
     margin: 40px auto 60px;
   }
   .page_banner .service-title-box {
-     width: 65%;
+    width: 65%;
   }
- 
+
   .portfolios {
     padding-bottom: 60px !important;
   }
@@ -2327,7 +2327,6 @@ footer {
     font-size: 18px;
     line-height: 36px;
   }
-  
 }
 
 @media screen and (max-width: 425px) {

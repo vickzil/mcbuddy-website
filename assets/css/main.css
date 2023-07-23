@@ -2855,6 +2855,7 @@ img {
 
 .testimonial-block .inner-box {
   position: relative;
+  height: 230px;
   /* padding: 45px 45px; */
   padding: 40px 40px;
   border: 1px solid #e1e1e1;
@@ -5237,9 +5238,17 @@ img {
   color: var(--mainSecondaryColor) !important;
   box-shadow: none !important;
 }
+
 @media(max-width:477px){
   .contact-page-section{
     padding-top: 54px;
 
   }
+  
+}
+@media(max-width:300px){
+  .testimonial-block .inner-box {
+     height: auto;
+  }
+  
 }

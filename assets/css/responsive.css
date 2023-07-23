@@ -789,6 +789,7 @@
         margin-top: 50px !important;
     }
     .about-image {
+        width: 100%;
         margin-left: 0px;
     }
 
@@ -1186,6 +1187,7 @@
         margin-bottom: 15px;
     }
 }
+
 
 @media only screen and (max-width: 450px) {
     /* .login-icon,

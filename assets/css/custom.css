@@ -951,7 +951,11 @@
 /*################ BANNER ###################*/
 
 .offer {
-  background-image: linear-gradient(to bottom, #fc4a08, #ca5d0a7c),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 136, 0, 0.915),
+      #ca5d0a7c
+    ),
     url("../images/background/page-heading-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1778,7 +1782,7 @@ footer {
   }
 
   .about-section .about-image {
-    width: 65%;
+    /* width: 65%; */
     margin: auto;
   }
 
@@ -1861,6 +1865,7 @@ footer {
 
   .page_banner .service-title-box h2 {
     font-size: 30px;
+    line-height: 30px;
   }
 
   .banner {
@@ -2038,7 +2043,7 @@ footer {
   }
 
   .page_banner {
-    padding: 5rem 0 4rem;
+    padding: 8rem 0 6rem;
   }
 
   .page_banner .service-title-box {
@@ -2246,7 +2251,10 @@ footer {
     /* margin: 40px auto 70px; */
     margin: 40px auto 60px;
   }
-
+  .page_banner .service-title-box {
+     width: 65%;
+  }
+ 
   .portfolios {
     padding-bottom: 60px !important;
   }
@@ -2319,6 +2327,7 @@ footer {
     font-size: 18px;
     line-height: 36px;
   }
+  
 }
 
 @media screen and (max-width: 425px) {

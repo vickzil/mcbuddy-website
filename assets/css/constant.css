@@ -183,8 +183,8 @@
   padding: 10px 15px;
   /* box-shadow: 0 5px 8px 8px rgba(221, 221, 221, 0.774); */
   transition: all 400ms ease-in !important;
-  background: #fc4a08;
-  border: 2px solid #fc4a08;
+  background: var(--mainSecondaryColor);
+  border: 2px solid var(--mainSecondaryColor);
   color: rgb(255, 255, 255);
   margin: 20px auto 0px;
   width: 90%;
@@ -193,7 +193,7 @@
 .news_button.inversee {
   background: #fff;
   color: rgb(7, 7, 7);
-  border: 2px solid #fc4a08;
+  border: 2px solid var(--mainSecondaryColor);
 }
 
 .news_button:hover {
@@ -211,6 +211,7 @@
     /* grid-gap: 19px; */
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 
 @media screen and (max-width: 952px) {
@@ -316,14 +317,34 @@
   text-transform: uppercase;
 }
 
+ 
 .details {
   margin-top: 0px;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
 }
+.detailed {
+  margin-top: 0px;
+ display: flex;
+ justify-content: space-between;
+ gap: 15rem;
+}
 
 .details .news-details {
+  margin-top: 22px;
+  position: relative;
+  box-shadow: rgba(68, 88, 144, 0.1) 0px 10px 29px 0px;
+  text-align: center;
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0px 10px 40px;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out 0s;
+  border-top: 4px solid var(--mainLightBlue);
+}
+.detailed .news-detailed {
   margin-top: 22px;
   position: relative;
   box-shadow: rgba(68, 88, 144, 0.1) 0px 10px 29px 0px;
@@ -376,6 +397,30 @@
   border-radius: 5px;
 }
 
+.detailed .news-detailed h4 {
+  font-size: 14px;
+  /* text-align: left !important; */
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.detailed .news-detailed p {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.5 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.detailed .news-detailed img {
+  height: 50px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .news_button {
   border: none;
   font-size: 10px;
@@ -388,7 +433,11 @@
   margin-top: -7px;
   /* box-shadow: 0 5px 8px 8px rgba(221, 221, 221, 0.774); */
   transition: all 900ms ease-in !important;
-  background: #fc4a08;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 68),
+    rgba(195, 105, 3, 0.791)
+  );
   color: rgb(253, 253, 253);
   margin-top: 20px;
   width: 100%;
@@ -403,6 +452,13 @@
   /* color: black !important; */
 }
 
+
+@media screen and (max-width: 1170px) {
+  .detailed {
+     width: 100%;
+    gap: 1rem;
+  }
+}
 @media screen and (max-width: 992px) {
   .details .news-details {
     width: 70%;
@@ -438,10 +494,19 @@
 }
 
 @media screen and (max-width: 540px) {
+  .detailed {
+    display: block;
+    gap: 0px;
+    width: 100%;
+    /* display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr; */
+  }
   .details {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 
   .news_blog .container {
@@ -457,6 +522,7 @@
   .main-footer .widgets-section {
     padding-top: 20px !important;
   }
+  
 }
 
 .reputation-section-two {
@@ -474,7 +540,11 @@
   max-width: 650px;
   margin: auto;
 }
-
+@media screen and (max-width: 300px) {
+  .detailed {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .testimonial-block .inner-box {
     padding: 20px 20px;
@@ -484,39 +554,5 @@
 @media screen and (min-width: 1440px) {
   .testimonial-block .inner-box {
     padding: 40px 40px;
-  }
-}
-
-.sponsors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.sponsor-image {
-  max-width: 140px;
-  height: auto;
-  margin: 10px 15px;
-}
-
-.sponsor-image img {
-  max-height: 60px;
-  transition: 0.4s ease;
-}
-
-.sponsor-image img:hover {
-  transform: scale(1.075);
-}
-
-@media screen and (max-width: 769px) {
-  .sponsor-image {
-    margin: 10px 12px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .sponsor-image {
-    margin: 20px 10px;
   }
 }
